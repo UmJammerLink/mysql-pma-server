@@ -1,0 +1,11 @@
+[Unit]
+Description=mysql-pma-server
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/local/bin/start-mysql-pma.sh
+
+[Install]
+WantedBy=default.target
