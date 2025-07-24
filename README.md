@@ -1,18 +1,21 @@
 # MYSQL and PHPMyAdmin docker-compose file
 
-Dockerfile with MYSQL and PHPMyAdmin. The changes will be updates on the data subfolder of our project, to persist data between sessions.
+Dockerfile with MYSQL and PHPMyAdmin. The changes will be updated on the data subfolder of our project, to persist data between sessions.
 
 ## Requirements:
-- Internet connection.
-- Docker.
-- Docker compose.
+- Internet connection
+- Docker
+- Docker compose
 
 ## Instructions:
-'docker-compose up' from the path where this repository was downloaded for creating (if required) and launching the dockers containers.
+'sudo docker compose up' from the path where this repository was downloaded for creating (if required) and launching the dockers containers.
 
 ## Notes:
 - The .env variables will have been defined before to launch for the first time.
 - In case you change .env variables after the first start (a test start) you will need to delete 'data' folder with the new configuration. In that case, it will be recommended to prune all the related containers / networks / images.
+
+## Scripts:
+- This repository includes the starter script for the correct management of the database, with all the information to work with (the main tables from the database).
     
 
 # Ubuntu / Linux service config to setup dockers on launch
